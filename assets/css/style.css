@@ -1,0 +1,386 @@
+/* ----------------------------------------------------------------------------------------
+
+            BASIC SETUP
+===========================================================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html,
+body {
+    width: 100vw;
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Proxima Nova', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    overflow: scroll;
+    
+}
+
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ ::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+section {
+    padding: 0;
+    height: 100vh;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    /*-- our gutter -- */
+    /* padding: 12px; */
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.wrap {
+    /* height: 100vh; */
+    margin: 100px 0 100px 0;
+}
+
+
+/*--------------------HEADINGS------------------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #fff;
+    font-size: 420%;
+    white-space: nowrap;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 100;
+    /* margin-bottom: 20px; */
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+/* ========================================================
+    BACKGROUNDS 
+==============================================================*/
+
+#cover {
+    background-color: #000;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    width: 1140px;
+    padding: 100px;
+    top: 50%;
+    left: 44%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------
+
+                            IMAGES AND ICONS
+
+ ==================================================================================================================
+*/
+
+#profileimg {
+    height: 250px;
+    width: 250px;
+    border: 1px solid transparent;
+    border-radius: 600px;
+}
+
+#imgcontainer {
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    left: 48.5%;
+    color: #fff;
+}
+
+.arrow1 {
+    position: absolute;
+    z-index: auto;
+    bottom: 0px;
+    left: 48.5%;
+    color: rgb(0, 0, 0);
+}
+
+.code {
+    margin-left: 100px;
+    height: 550px;
+}
+
+#s-logo {
+    height: 700px;
+    margin-bottom: 50px;
+}
+
+
+/* --------------------HOME------------------------------------------------------ */
+
+.text-box {
+    height: 180px;
+    padding-top: 55px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 999;
+}
+
+
+/* -----------------------SKILL1-------------------------------------------------- */
+
+section#skill1 {
+    background-color: rgb(248, 248, 248);
+}
+
+.text-box p {
+    margin-top: 40px;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 62px;
+}
+
+
+/* -----------------------SKILL2-------------------------------------------------- */
+
+#cover-skill2 {
+    background-color: #fffef9;
+}
+
+
+/* -----------------------RESUME-------------------------------------------------- */
+
+#cover-resume {
+    background-color: #000;
+}
+
+.box1 {
+    width: 60%;
+    border: 2px solid #fff;
+    height: 480px;
+    margin: 200px auto;
+    color: #fff;
+    text-align: center;
+    padding: 45px;
+}
+
+.box1 .h2text {
+    margin: 50px 0 45px 0;
+}
+
+.h2text h2 {
+    font-weight: 900;
+}
+
+.box1 .desc {
+    font-weight: 500;
+}
+
+button.material {
+    border: 1px solid #fff;
+    width: 50%;
+    height: 75px;
+    color: #fff;
+    font-size: 25px;
+    background: transparent;
+    padding: 5px;
+    font-weight: normal;
+    margin-top: 60px;
+}
+
+
+/* -----------------------SOCIAL-------------------------------------------------- */
+
+.wrapper {
+    margin-top: 340px;
+    height: 0;
+}
+
+#cover-social {
+    background-color: #ffd86e;
+}
+
+#info {
+    margin-top: 45px;
+}
+
+#info .social-icon i,
+#info .social-icon h4 {
+    display: inline-block;
+}
+
+#info .social-icon i {
+    margin: 25px 25px 25px 0;
+    width: 8px;
+    color: #fff;
+}
+
+#info .social-icon h4 {
+    margin-left: 12px;
+    color: #fff;
+}
+
+#social .col-2 h2 {
+    text-align: left;
+    color: #fff
+}
+
+#info .fb h4:hover,
+#info .fb i:hover {
+    color: #3b5998;
+}
+
+#info .ig h4:hover,
+#info .ig i:hover {
+    color: #C32AA3;
+}
+
+#info .ph h4:hover,
+#info .ph i:hover {
+    color: rgb(75, 241, 111);
+}
+
+.wrapper div.col-2:first-child {
+    box-shadow: 14px 24px 87px -43.4px #000;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+div.imgwrap {
+    margin-bottom: 0;
+    position: relative;
+    top: -80px;
+    right: -90px;
+}
+
+.col-2 img.user {
+    border: 1px solid transparent;
+    border-radius: 600px;
+    height: 421px;
+    width: 421px;
+    box-shadow: 14px 24px 87px -43.4px #000;
+}
+
+
+/* -----------------------Contact-------------------------------------------------- */
+
+#cover-contact {
+    background-color: rgb(0, 14, 37);
+}
+
+.input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 45px;
+    color: rgb(236, 236, 236)
+}
+
+.msg {
+    height: 100px;
+}
+
+#contact-heading {
+    margin-bottom: 45px;
+    color: #fff;
+}
+
+.footer {
+    color: #fff;
+    position: absolute;
+    margin: 25px;
+    bottom: 10px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+a.top {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
